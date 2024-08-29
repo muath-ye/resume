@@ -2,6 +2,8 @@ const CACHE_NAME = 'muath-resume-cache-v1';
 const urlsToCache = [
     '/',
     '/index.html',
+    './icons/icon-192x192.png',
+    './icons/icon-512x512.png',
     'https://docs.google.com/document/d/16trp7NDznynAbLOrosEajkBLoy-CSdJoGr5JeJUtWWM/pub?embedded=true'
 ];
 
