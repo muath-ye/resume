@@ -2,7 +2,7 @@
     "name": "Muath's Resume",
     "short_name": "Muath's Resume",
     "description": "Muath's resume.",
-    "start_url": "/",
+    "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#ffc517",
