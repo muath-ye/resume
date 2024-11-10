@@ -6,19 +6,26 @@
   <title>Muath's resume</title>
   <link rel="manifest" href="manifest.json">
   <style>
-    /* Ensure the iframe fills the entire viewport */
+    /* Ensure the iframe fills the viewport but is centered horizontally */
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
       width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       overflow: hidden; /* Prevent scrollbars */
     }
 
+    .iframe-container {
+      width: 100%;
+      max-width: 800px; /* Adjust the max-width to control the iframe's width */
+      height: 100%;
+      overflow: hidden;
+    }
+
     iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
       border: none;
@@ -45,7 +52,9 @@
   </style>
 </head>
 <body>
-<iframe src="https://docs.google.com/document/d/16trp7NDznynAbLOrosEajkBLoy-CSdJoGr5JeJUtWWM/pub?embedded=true"></iframe>
+<div class="iframe-container">
+  <iframe src="https://docs.google.com/document/d/16trp7NDznynAbLOrosEajkBLoy-CSdJoGr5JeJUtWWM/pub?embedded=true"></iframe>
+</div>
 
 <!-- Floating button -->
 <a href="https://docs.google.com/document/d/16trp7NDznynAbLOrosEajkBLoy-CSdJoGr5JeJUtWWM/export?format=docx">
